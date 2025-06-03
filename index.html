@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+    <html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="MagicNameStyles.css">
+    <link rel="icon" type="image/x-icon" href="HEADSHOT.webp">
+    <title>🖤77MagicNameSite🖤</title>
+  
+    <a name="poczatek"></a>
+</head>
+    <body>
+    <!-- Wideo w tle -->
+    <video class="video-background" autoplay loop muted id="backgroundVideo">
+        <source src="background.mp4" type="video/mp4">
+        Twój przeglądarka nie wspiera odtwarzania wideo 
+    </video>
+    <!---TaskBar Na dole -->
+    <div class="taskbar">
+        <div class="menu">
+            <a>
+                💜
+            </a>
+        </div>
+        <div class="volume-control">
+            <label for="volume">🌐Głośność🔊:</label>
+            <input type="range" id="volume" min="0" max="100" value="100">
+            <span id="volume-percent">100%</span>
+        </div>
+        <div class="clock"style="padding-right: 50px;">Godzina⏰    <div class="clock" id="clock">00:00:00</div></div>
+    </div>
+    
+    <!-- Audio -->
+    <audio id="audio" loop autoplay>
+        <source src="silent.mp3" type="audio/mpeg">
+        Twoja przeglądarka nie wspiera odtwarzania audio.
+    </audio>
+    
+    <script>
+        // Elementy HTML
+        const volumeSlider = document.getElementById('volume');
+        const volumePercent = document.getElementById('volume-percent');
+        const audio = document.getElementById('audio');
+    
+        // Obsługa zmiany głośności
+        volumeSlider.addEventListener('input', () => {
+            const volume = volumeSlider.value / 100; // Przekształcamy wartość z procentów na skalę 0-1
+            audio.volume = volume;
+            volumePercent.textContent = `${volumeSlider.value}%`;
+        });
+    </script>
+    
+        <!---Zegar-->
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            
+            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        // Aktualizuj zegar co sekundę
+        setInterval(updateClock, 1000);
+
+        // Ustaw początkowy czas
+        updateClock();
+    </script>
+    
+   
+    
+        <!--Przyciski-->
+    <div class="button-container">
+        <a href="https://www.tiktok.com/@ziuberr" class="button" target="_blank">
+            <i class="fab fa-tiktok"></i>
+            TikTok
+        </a>
+        <a href="https://www.instagram.com/pseudonimrakieta/" class="button2" target="_blank">
+            <i class="fab fa-instagram"></i>
+            Instagram
+        </a>
+        <a href="https://www.youtube.com/@MagicName" class="button3" target="_blank">
+            <i class="fab fa-youtube"></i>
+            YouTube
+        </a>
+        <a href="https://www.twitch.tv/77magicnamekc" class="button4" target="_blank">
+            <i class="fab fa-twitch"></i>
+            Twitch
+        </a>
+        <a href="https://www.youtube.com" class="button5" target="_blank">
+            <i class="fas fa-donate"></i>
+           Na bezdomnych
+        </a>
+        <a href="https://steamcommunity.com/id/NajwiekszyOgSkurwysyn/" class="button6" target="_blank">
+            <i class="fab fa-steam"></i>
+            Steam
+        </a>
+    </div>
+    
+
+    
+    <!-- Pasek Góra -->
+<div class="navbar">
+    <div class="logo">
+        <img src="HEADSHOT.webp" alt="Logo">
+        
+            <p><abbr title ="77MagicNamekc">Autor</abbr></p> 
+        
+    </div>
+
+    <!--Zakładki na pasku-->
+    <div class="menu">
+        <a href="#">Wkrótce</a>
+        <a href="#">Home</a>
+        <a href="#" target=>Wkrótce</a>
+        <a href="#" target=>Wkrótce</a>
+        <a href="#" style="height: 20px; width: 20px;"></a>
+        
+    </div>
+</div> 
+
+
+ 
+
+
+
+
+
+</body>
+</html>

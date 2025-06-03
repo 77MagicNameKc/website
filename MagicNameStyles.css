@@ -1,0 +1,282 @@
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            
+        }
+
+        /* Tło wideo */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+          
+        /* Pasek nawigacyjny */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+            box-shadow: black 0px 0px 10px 2px;
+            color: #9400d3;
+
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            filter: drop-shadow(1px 1px 5px  #9400d3);
+        }
+
+        .navbar .logo img {
+            width: 40px;
+            height: 40px;
+            filter: drop-shadow(1px 1px 5px  #9400d3);
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .menu a {
+            text-decoration: none;
+            color: #9400d3;
+            font-size: 1rem;
+        }
+
+        .content {
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        
+        /* Przyciski na pasku */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            color: #9400d3;
+        }
+
+
+        /* Przyciski */
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: black;
+            border: #9400d3;
+            border-radius: 30px;
+            border-style: groove;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: #9400d3 0px 0px 8px 2px;
+        }
+
+        .button i {
+            margin-right: 10px;
+        }
+
+        .button:hover {
+            background-color: transparent   ;
+        }
+
+        .button2 {
+            background-color: black ;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            border: #9400d3;
+            border-radius: 30px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: #9400d3 0px 0px 8px 2px;
+        }
+
+        .button2 i {
+            margin-right: 10px;
+        }
+
+        .button2:hover {
+            background-color: transparent ;
+        }
+
+        .button3 {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: black;
+            border: #9400d3;
+            border-radius: 30px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: #9400d3 0px 0px 8px 2px;
+        }
+
+        .button3 i {
+            margin-right: 10px;
+        }
+
+        .button3:hover {
+            background-color: transparent;
+        }
+
+        .button4 {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: black;   
+            border: #9400d3;
+            border-radius: 30px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow:#9400d3 0px 0px 8px 2px;
+        }
+
+        .button4 i {
+            margin-right: 10px;
+        }
+
+        .button4:hover {
+            background-color: transparent;
+        }
+        
+        .button5 {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: black;
+            border: #9400d3;
+            border-radius: 30px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: #9400d3 0px 0px 8px 2px;
+        }
+
+        .button5 i {
+            margin-right: 10px;
+        }
+
+        .button5:hover {
+            background-color: transparent;
+        }
+        
+
+        .button6  {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: black;
+            border: #9400d3;
+            border-radius: 30px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3 ease;
+            box-shadow: #9400d3 0px 0px 8px 2px;
+        }
+
+        .button6 i {
+            margin-right: 10px;
+        }
+        
+        .button6:hover {
+            background: transparent;
+        }
+            
+        
+        
+        
+        
+        span {
+                color: #9400d3;
+            }
+
+         
+
+
+        /* Pasek Dolny */
+       
+        .taskbar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: (0, 0, 0, 0.1);
+            color: #9400d3;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            background-color: transparent;
+            box-shadow: black 0px 0px 10px 2px;
+        }
+
+        .taskbar .volume-control {
+            display: flex;
+            align-items: center;
+        }
+
+        .taskbar .volume-control label {
+            margin-right: 10px;
+        }
+
+        .taskbar .volume-control input[type="range"] {
+            width: 150px;
+        }
+
+        .taskbar .volume-percentage {
+            margin-left: 10px;
+        }
+
+     
